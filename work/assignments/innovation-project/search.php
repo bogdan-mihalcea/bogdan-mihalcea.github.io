@@ -3,9 +3,9 @@
 	ini_set('display_errors', 1);
 	ini_set('display_startup_errors', 1);
 	error_reporting(E_ALL);
-
-	// Google API key
-	$apikey = "apikey";
+	
+	// Credentials
+	include 'config.php';
 	
 	// API calls & form
 	if ($_SERVER['REQUEST_METHOD'] == 'POST') // check if form was submitted
@@ -154,7 +154,7 @@ function geolocate() {
   }
 }
       </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=apikey&libraries=places&callback=initAutocomplete"
+    <script src="https://maps.googleapis.com/maps/api/js?key=<?php echo $apikey; ?>&libraries=places&callback=initAutocomplete"
         async defer></script>
   </body>
 </html>
