@@ -154,7 +154,7 @@ function geolocate() {
   }
 }
       </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiYfhpLM9gAmW8RaKwQVjeIKPUbG70RGM&libraries=places&callback=initAutocomplete"
+    <script src="https://maps.googleapis.com/maps/api/js?key=apikey&libraries=places&callback=initAutocomplete"
         async defer></script>
   </body>
 </html>
